@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Saori's web site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../styles/w3.css">
+  <link rel="stylesheet" href="../styles/css_family_Lato.css">
+  <link rel="stylesheet" href="../styles/font-awesome.min.css">
+  <link rel="stylesheet" href="../styles/mystyle.css">
+  <style>
+    body {font-family: "Lato", sans-serif}
+  </style>
+  </head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="bio.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BIO</a>
+    <a href="publication.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PUBLICATIONS</a>
+    <a href="posts/index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">POSTS</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="posts/contact.html" class="w3-bar-item w3-button">CONTACT</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="bio.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BIO</a>
+  <a href="publication.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PUBLICATIONS</a>
+  <a href="posts/index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">POSTS</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <div class="w3-display-container w3-center">
+    <img src="../images/gray_background.svg" style="width:100%">
+    <div class="w3-display-topmiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h2>Biography</h2>
+      <p><span class="mgr-10">04/2019-03/2022</span>Ph.D., The University of Tokyo (Tokyo, Japan)</p>
+      <p><span class="mgr-10">04/2013-03/2019</span>B.S., M.D., Kyoto University Medical School (Kyoto, Japan)</p>
+      <p><span class="mgr-10">04/2006-03/2012</span>Chiben Gakuen Wakayama Junior/High School (Wakayama, Japan)</p>
+      <h2>Research experience</h2>
+      <p><span class="mgr-10">04/2022-present</span>PostDoctoral Associate, Prof. Shu-Bing Qian, Cornell University (Ithaca, NY)</p>
+      <p><span class="mgr-10">04/2019-03/2022</span>Graduate student, Prof. Shinya Kuroda, The University of Tokyo (Tokyo, Japan)</p>
+      <p><span class="mgr-10">05/2018-03/2019</span>Visiting student, Prof. Ryo Yamada, Kyoto University (Kyoto, Japan)</p>
+      <p><span class="mgr-10">07/2016-10/2016</span>Summer intern, Dr. Maria Carla Parrini, Institut Curie, Paris, France</p>
+      <p><span class="mgr-10">05/2013-03/2018</span>Visiting student, Prof. Michiyuki Matsuda, Kyoto University (Kyoto, Japan)</p>
+    </div>
+  </div>
+  
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
+

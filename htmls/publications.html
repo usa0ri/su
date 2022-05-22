@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Saori's web site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../styles/w3.css">
+  <link rel="stylesheet" href="../styles/css_family_Lato.css">
+  <link rel="stylesheet" href="../styles/font-awesome.min.css">
+  <link rel="stylesheet" href="../styles/mystyle.css">
+  <style>
+    body {font-family: "Lato", sans-serif}
+  </style>
+  </head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="bio.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BIO</a>
+    <a href="publication.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PUBLICATIONS</a>
+    <a href="posts/index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">POSTS</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="posts/contact.html" class="w3-bar-item w3-button">CONTACT</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="bio.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BIO</a>
+  <a href="publications.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PUBLICATIONS</a>
+  <a href="posts/index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">POSTS</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <div class="w3-display-container">
+    <img src="../images/gray_background.svg" style="width:100%">
+    <div class="w3-display-topmiddle w3-container w3-text-white w3-padding-64 w3-hide-small">
+      <h1>Publications</h1>
+      <h2>Original articles</h2>
+      <h3>Lead author</h3>
+      <p>
+          <u>S. Uematsu</u>, S. Ohno, K. Tanaka, A. Hatano, T. Kokaji, Y. Ito, H. Kubota, K. Hironaka, Y. Suzuki, M. Matsumoto, K. I. Nakayama, A. Hirayama, T. Soga, and S. Kuroda.
+          <br>Multi-omics-based label-free metabolic flux inference reveals dysregulatory mechanisms in liver glucose metabolism.</br>
+          <i>iScience</i> 25(2)103787, 2022
+          <br><a href="https://doi.org/10.1016/j.isci.2022.103787">DOI</a></br>
+      </p>
+      <p>
+          <u>S. Takaoka</u>, Y. Kamioka, K. Takakura, A. Baba, H. Shime, T. Seya, and M. Matsuda.
+          <br>Live imaging of transforming growth factor-β activated kinase 1 activation in Lewis lung carcinoma 3LL cells implanted into syngeneic mice and treated with polyinosinic:polycytidylic acid.</br>
+          <i>Cancer Sci.</i> 107(5)644-652, 2016
+          <br><a href="https://doi.org/10.1111/cas.12923">DOI</a></br>
+      </p>
+
+      <h3>Coauthor</h3>
+      <p>
+          R. Egami, T. Kokaji, A. Hatano, K. Yugi, M. Eto, K. Morita, S. Ohno, M. Fujii, K. Hironaka, <u>S. Uematsu</u>, A. Terakawa, Y. Bai, Y. Pan, T. Tsuchiya, H. Ozaki, H. Inoue, S. Uda, H. Kubota, Y. Suzuki, M. Matsumoto, K. I. Nakayama, A. Hirayama, T. Soga, and S. Kuroda.
+          <br>Trans-omic analysis reveals obesity-associated dysregulation of inter-organ metabolic cycles between the liver and skeletal muscle.</br>
+          <i>iScience</i> 24(3)102217, 2021
+          <br><a href="https://doi.org/10.1016/j.isci.2021.102217">DOI</a></br>
+      </p>
+      <p>
+          G. Zago, I. Veith, M. K. Singh, L. Fuhrmann, S. De Beco, A. Remorino, <u>S. Takaoka</u>, M. Palmeri, F. Berger, N. Brandon, A. El Marjou, A. Vincent-Salomon, J. Camonis, M. Coppey, and M. C. Parrini.
+          <br>RalB directly triggers invasion downstream Ras by mobilizing the Wave complex.</br>
+          <i>eLife</i> 7, e40474, 2018
+          <br><a href="https://doi.org/10.7554/eLife.40474">DOI</a></br>
+      </p>
+
+      <h2>Review articles</h2>
+      <h3>Coauthor</h3>
+      <p>
+          S. Ohno, <u>S. Uematsu</u>, and S. Kuroda.
+          <br>Quantitative metabolic fluxes regulated by trans-omic networks.</br>
+          <i>Biochem. J.</i> 479 (6): 787-804, 2022
+          <br><a href="https://doi.org/10.1042/BCJ20210596">DOI</a></br>
+      </p>
+    </div>
+  </div>
+  
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
+
