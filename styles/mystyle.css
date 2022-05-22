@@ -271,6 +271,7 @@ nav.globalMenuSp.active {
     padding-bottom: 4px;
     background-color: rgb(80, 80, 80);
     border-radius: 30px;
+    text-align: left;
     /* border: 4px solid #bebebe; */
 }
 
