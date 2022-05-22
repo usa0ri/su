@@ -9,11 +9,36 @@ body {
     margin-right: 10px;
 }
 
-.mycontainer {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+.mycontent a:link {
+    color: rgb(2, 211, 183);
+    background-color: transparent;
+    text-decoration: none;
 }
+
+.mycontent a:visited {
+    color: rgb(197, 0, 197);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.mycontent a:hover {
+    color: rgb(129, 222, 250);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.mycontent a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.mycontent li {
+    line-height: 150%;
+}
+
+
+/* navigation bar (large screen) */
 
 .navbar-top {
     top: 0;
@@ -30,13 +55,15 @@ body {
     border: none;
     display: block;
     outline: 0;
-    position: static;
+    position: fixed;
     white-space: normal;
     color: #fff!important;
     background-color: #000!important;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
 }
 
+.mycontainer:after,
+.mycontainer:before,
 .navbar:before,
 .navbar:after {
     content: "";
@@ -79,4 +106,198 @@ body {
 .navbar-dropdown-click:hover>.navbar-item:first-child {
     background-color: #ccc;
     color: #000
+}
+
+
+/* navigation bar (small screen) */
+
+.hamburger {
+    display: block;
+    position: fixed;
+    z-index: 3;
+    right: 15px;
+    top: 10px;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.hamburger span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: 6px;
+    background: #BBBBBB;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+    top: 10px;
+}
+
+.hamburger span:nth-child(2) {
+    top: 20px;
+}
+
+.hamburger span:nth-child(3) {
+    top: 30px;
+}
+
+
+/* スマホメニューを開いてる時のボタン */
+
+.hamburger.active span:nth-child(1) {
+    top: 16px;
+    left: 6px;
+    background: #fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+    top: 16px;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* メニュー背景　*/
+
+nav.globalMenuSp {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: rgba(8, 8, 8, 0.6);
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    display: none;
+    transition: opacity .6s ease, visibility .6s ease;
+}
+
+nav.globalMenuSp ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%
+}
+
+nav.globalMenuSp ul li {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    transition: .4s all;
+}
+
+nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+}
+
+nav.globalMenuSp ul li:hover {
+    background: #ddd;
+}
+
+nav.globalMenuSp ul li a {
+    display: block;
+    color: #fff;
+    padding: 1em 0;
+    text-decoration: none;
+}
+
+
+/* クリックでjQueryで追加・削除 */
+
+nav.globalMenuSp.active {
+    opacity: 100;
+    display: block;
+}
+
+@media screen and (max-width: 786px) {
+    .hamburger {
+        display: inline-block;
+    }
+    .navbar {
+        flex-wrap: wrap;
+        width: 100%
+    }
+    .navbar-item {
+        flex: auto;
+        width: auto
+    }
+}
+
+
+/* contents */
+
+.mycontent {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mydisplay-container {
+    position: relative
+}
+
+.mydisplay-container:hover .mydisplay-hover {
+    display: block
+}
+
+.mydisplay-hover {
+    display: none
+}
+
+.mycontainer {
+    padding: 0.01em 16px;
+    color: #fff!important;
+    padding-top: 32px!important;
+    padding-bottom: 32px!important
+}
+
+
+/* footer */
+
+.myfooter {
+    padding: 0.01em 16px;
+    padding: 16px 8px!important;
+    text-align: center!important;
+    color: #fff!important;
+    background-color: #000!important
+}
+
+.myfooter-center .mybar {
+    display: inline-block;
+    width: auto
+}
+
+.myfa-official {
+    margin: 2px 4px 6px 8px;
+}
+
+.myfa-official:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.myfa-official:hover {
+    opacity: 0.60
+}
+
+
+/* email address */
+
+.domain::before {
+    content: '@';
 }

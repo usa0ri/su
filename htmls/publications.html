@@ -5,10 +5,11 @@
     <title>Saori's web site</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../styles/w3.css">
     <link rel="stylesheet" href="../styles/css_family_Lato.css">
     <link rel="stylesheet" href="../styles/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/mystyle.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../scripts/humburger.js"></script>
 </head>
 
 <body>
@@ -16,67 +17,66 @@
     <!-- Navbar -->
     <div class="navbar-top">
         <div class="navbar">
-            <a class="navbar-item" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
             <a href="../index.html" class="navbar-item">HOME</a>
-            <a href="bio.html" class="navbar-item">BIO</a>
-            <a href="publications.html" class="navbar-item">PUBLICATIONS</a>
+            <a href="bio.html" class="navbar-item">CV</a>
+            <a href="publications.html" class="navbar-item" style="background-color:rgb(53, 118, 119)">PUBLICATIONS</a>
             <a href="posts/index.html" class="navbar-item">POSTS</a>
             <a href="contact.html" class="navbar-item">CONTACT</a>
-            <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
         </div>
     </div>
 
-    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-        <a href="bio.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BIO</a>
-        <a href="publications.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PUBLICATIONS</a>
-        <a href="posts/index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">POSTS</a>
-        <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <div id="navDemo" class="hamburger" style="margin-top:0%">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
+    <nav class="globalMenuSp">
+        <ul>
+            <li><a href="../index.html" class="navbar-item">HOME</a></li>
+            <li><a href="bio.html" class="navbar-mobile-item">CV</a></li>
+            <li><a href="publications.html" class="navbar-mobile-item" style="background-color:rgb(53, 118, 119)">PUBLICATIONS</a></li>
+            <li><a href="posts/index.html" class="navbar-mobile-item">POSTS</a></li>
+            <li><a href="contact.html" class="navbar-mobile-item">CONTACT</a></li>
+        </ul>
+    </nav>
 
     <!-- Page content -->
-    <div class="w3-content" style="max-width:2000px;margin-top:46px;flex:1">
+    <div class="mycontent" style="max-width:2000px;margin-top:46px;flex:1">
 
-        <div class="w3-display-container">
-            <div class="w3-container w3-text-white w3-padding-32">
-                <h1>Publications</h1>
+        <div class="mydisplay-container">
+            <div class="mycontainer">
                 <h2>Original articles</h2>
                 <h3>Lead author</h3>
                 <p>
                     <u>S. Uematsu</u>, S. Ohno, K. Tanaka, A. Hatano, T. Kokaji, Y. Ito, H. Kubota, K. Hironaka, Y. Suzuki, M. Matsumoto, K. I. Nakayama, A. Hirayama, T. Soga, and S. Kuroda.
-                    <br>Multi-omics-based label-free metabolic flux inference reveals dysregulatory mechanisms in liver glucose metabolism.</br>
+                    <br><a href="https://doi.org/10.1016/j.isci.2022.103787">Multi-omics-based label-free metabolic flux inference reveals dysregulatory mechanisms in liver glucose metabolism.</a></br>
                     <i>iScience</i> 25(2)103787, 2022
-                    <br><a href="https://doi.org/10.1016/j.isci.2022.103787">DOI</a></br>
                 </p>
                 <p>
                     <u>S. Takaoka</u>, Y. Kamioka, K. Takakura, A. Baba, H. Shime, T. Seya, and M. Matsuda.
-                    <br>Live imaging of transforming growth factor-β activated kinase 1 activation in Lewis lung carcinoma 3LL cells implanted into syngeneic mice and treated with polyinosinic:polycytidylic acid.</br>
+                    <br><a href="https://doi.org/10.1111/cas.12923">Live imaging of transforming growth factor-β activated kinase 1 activation in Lewis lung carcinoma 3LL cells implanted into syngeneic mice and treated with polyinosinic:polycytidylic acid.</a></br>
                     <i>Cancer Sci.</i> 107(5)644-652, 2016
-                    <br><a href="https://doi.org/10.1111/cas.12923">DOI</a></br>
                 </p>
 
                 <h3>Coauthor</h3>
                 <p>
                     R. Egami, T. Kokaji, A. Hatano, K. Yugi, M. Eto, K. Morita, S. Ohno, M. Fujii, K. Hironaka, <u>S. Uematsu</u>, A. Terakawa, Y. Bai, Y. Pan, T. Tsuchiya, H. Ozaki, H. Inoue, S. Uda, H. Kubota, Y. Suzuki, M. Matsumoto, K. I. Nakayama,
                     A. Hirayama, T. Soga, and S. Kuroda.
-                    <br>Trans-omic analysis reveals obesity-associated dysregulation of inter-organ metabolic cycles between the liver and skeletal muscle.</br>
+                    <br><a href="https://doi.org/10.1016/j.isci.2021.102217">Trans-omic analysis reveals obesity-associated dysregulation of inter-organ metabolic cycles between the liver and skeletal muscle.</a></br>
                     <i>iScience</i> 24(3)102217, 2021
-                    <br><a href="https://doi.org/10.1016/j.isci.2021.102217">DOI</a></br>
                 </p>
                 <p>
                     G. Zago, I. Veith, M. K. Singh, L. Fuhrmann, S. De Beco, A. Remorino, <u>S. Takaoka</u>, M. Palmeri, F. Berger, N. Brandon, A. El Marjou, A. Vincent-Salomon, J. Camonis, M. Coppey, and M. C. Parrini.
-                    <br>RalB directly triggers invasion downstream Ras by mobilizing the Wave complex.</br>
+                    <br><a href="https://doi.org/10.7554/eLife.40474">RalB directly triggers invasion downstream Ras by mobilizing the Wave complex.</a></br>
                     <i>eLife</i> 7, e40474, 2018
-                    <br><a href="https://doi.org/10.7554/eLife.40474">DOI</a></br>
                 </p>
 
                 <h2>Review articles</h2>
                 <h3>Coauthor</h3>
                 <p>
                     S. Ohno, <u>S. Uematsu</u>, and S. Kuroda.
-                    <br>Quantitative metabolic fluxes regulated by trans-omic networks.</br>
+                    <br><a href="https://doi.org/10.1042/BCJ20210596">Quantitative metabolic fluxes regulated by trans-omic networks.</a></br>
                     <i>Biochem. J.</i> 479 (6): 787-804, 2022
-                    <br><a href="https://doi.org/10.1042/BCJ20210596">DOI</a></br>
                 </p>
             </div>
         </div>
@@ -84,33 +84,17 @@
     </div>
     <!-- End Page Content -->
 
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-small w3-center w3-opacity w3-light-grey w3-xlarge">
-        <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i> -->
-        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    <footer class="myfooter myfooter-center">
+        <a class="myfa-official" href="https://github.com/usa0ri" target="_blank"><img src="../images/github.png" width="30px"></a>
+        <a class="myfa-official" href="https://hub.docker.com/u/saori" target="_blank"><img src="../images/Docker-Logo-White-RGB_Moby.png" width="30px"></a>
+        <a class="myfa-official" href="https://scholar.google.com/citations?user=qGisyOcAAAAJ&hl=en" target="_blank"><img src="../images/googlescholar.png" width="30px"></a>
+        <a class="myfa-official" href="https://orcid.org/0000-0002-7033-9494" target="_blank"><img src="../images/ORCID-iD_icon_reversed_vector.svg" width="30px"></a>
+        <a class="myfa-official" href="https://www.linkedin.com/in/saori-uematsu-890782134/" target="_blank"><img src="../images/linkedin_mod.png" width="30px"></a>
+        <a class="myfa-official" href="https://www.facebook.com/saori.takaoka.50" target="_blank"><img src="../images/f_logo_RGB-White_58.png" width="30px"></a>
+        <a class="myfa-official" href="https://twitter.com/usa0ri" target="_blank"><img src="../images/Twitter social icons - circle - white.svg" width="30px"></a>
+        <p></p>
+        <small>&copy; 2022 Saori Uematsu</small>
     </footer>
-
-    <script>
-        // Used to toggle the menu on small screens when clicking on the menu button
-        function myFunction() {
-            var x = document.getElementById("navDemo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        var modal = document.getElementById('ticketModal');
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
 
 </body>
 

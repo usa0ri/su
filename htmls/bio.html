@@ -5,10 +5,10 @@
     <title>Saori's web site</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../styles/w3.css">
     <link rel="stylesheet" href="../styles/css_family_Lato.css">
-    <link rel="stylesheet" href="../styles/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/mystyle.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../scripts/humburger.js"></script>
 </head>
 
 <body>
@@ -16,39 +16,85 @@
     <!-- Navbar -->
     <div class="navbar-top">
         <div class="navbar">
-            <a class="navbar-item" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
             <a href="../index.html" class="navbar-item">HOME</a>
-            <a href="bio.html" class="navbar-item">BIO</a>
+            <a href="bio.html" class="navbar-item" style="background-color:rgb(53, 118, 119)">CV</a>
             <a href="publications.html" class="navbar-item">PUBLICATIONS</a>
             <a href="posts/index.html" class="navbar-item">POSTS</a>
             <a href="contact.html" class="navbar-item">CONTACT</a>
-            <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+            <a href="bio_jp.html" class="navbar-item">日本語</a>
         </div>
     </div>
 
-    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-        <a href="bio.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BIO</a>
-        <a href="publication.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PUBLICATIONS</a>
-        <a href="posts/index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">POSTS</a>
-        <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <div id="navDemo" class="hamburger" style="margin-top:0%">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
+    <nav class="globalMenuSp">
+        <ul>
+            <li><a href="../index.html" class="navbar-item">HOME</a></li>
+            <li><a href="bio.html" class="navbar-mobile-item" style="background-color:rgb(53, 118, 119)">CV</a></li>
+            <li><a href="publications.html" class="navbar-mobile-item">PUBLICATIONS</a></li>
+            <li><a href="posts/index.html" class="navbar-mobile-item">POSTS</a></li>
+            <li><a href="contact.html" class="navbar-mobile-item">CONTACT</a></li>
+            <li><a href="bio_jp.html" class="navbar-item">日本語</a></li>
+        </ul>
+    </nav>
 
     <!-- Page content -->
-    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+    <div class="mycontent" style="max-width:2000px;margin-top:46px">
 
-        <div class="w3-display-container">
-            <div class="w3-container w3-text-white w3-padding-32 w3-hide-small">
-                <h2>Biography</h2>
+        <div class="mydisplay-container">
+            <div class="mycontainer">
+                <h2>Hometown</h2>
+                <p>Wakayama, Japan</p>
+                <h2>Education</h2>
                 <p><span class="mgr-10">04/2019-03/2022</span>Ph.D., The University of Tokyo (Tokyo, Japan)</p>
                 <p><span class="mgr-10">04/2013-03/2019</span>B.S., M.D., Kyoto University Medical School (Kyoto, Japan)</p>
                 <p><span class="mgr-10">04/2006-03/2012</span>Chiben Gakuen Wakayama Junior/High School (Wakayama, Japan)</p>
                 <h2>Research experience</h2>
                 <p><span class="mgr-10">04/2022-present</span>PostDoctoral Associate, Prof. Shu-Bing Qian, Cornell University (Ithaca, NY)</p>
-                <p><span class="mgr-10">04/2019-03/2022</span>Graduate student, Prof. Shinya Kuroda, The University of Tokyo (Tokyo, Japan)</p>
-                <p><span class="mgr-10">05/2018-03/2019</span>Visiting student, Prof. Ryo Yamada, Kyoto University (Kyoto, Japan)</p>
-                <p><span class="mgr-10">07/2016-10/2016</span>Summer intern, Dr. Maria Carla Parrini, Institut Curie, Paris, France</p>
-                <p><span class="mgr-10">05/2013-03/2018</span>Visiting student, Prof. Michiyuki Matsuda, Kyoto University (Kyoto, Japan)</p>
+                <p><span class="mgr-10">04/2019-03/2022</span>Graduate student, Prof. Shinya Kuroda, The University of Tokyo (Tokyo, Japan)
+                    <li style="margin-left:5%">Developed a computational method to investigate metabolic flux and its regulation in mouse liver using metabolomic, proteomic, and transcriptomic data.</li>
+                </p>
+                <p><span class="mgr-10">05/2018-03/2019</span>Visiting student, Prof. Ryo Yamada, Kyoto University (Kyoto, Japan)
+                    <li style="margin-left:5%">Developed an image processing pipeline to automatically extract cellular morphogenic features from images obtained by two-photon excitation microscopy.</li>
+                </p>
+                <p><span class="mgr-10">07/2016-10/2016</span>Summer intern, Dr. Maria Carla Parrini, Institut Curie, Paris, France
+                    <li style="margin-left:5%">Established an optogenetic tool to manipulate RalB GTPase in living human cells.</li>
+                    <li style="margin-left:5%">Used total internal reflection microscopy to monitor blue light-induced RalB activation.</li>
+                </p>
+                <p><span class="mgr-10">05/2013-03/2018</span>Visiting student, Prof. Michiyuki Matsuda, Kyoto University (Kyoto, Japan)
+                    <li style="margin-left:5%">Established a Förster resonance energy transfer (FRET)-based biosensor to detect transforming growth factor-β activated kinase 1 (TAK1) activity in living mammalian cells.</li>
+                    <li style="margin-left:5%">Used two-photon excitation microscopy to visualize TAK1 activity in tumor cells implanted into the subcutaneous tissue of mice.</li>
+                </p>
+                <h2>Fellowships</h2>
+                <p><span class="mgr-10">04/2022-present</span>Overseas Research Fellowship, Takeda Science Foundation
+                </p>
+                <p><span class="mgr-10">04/2019-03/2022</span>Grand-in-Aid for The Japan Society for the Promotion of Science (JSPS) Research Fellow (DC1)
+                </p>
+                <p><span class="mgr-10">07/2016-10/2016</span>Japan Public-Private Partnership Student Study Abroad Program 2016 TOBITATE! Young Ambassador Program
+                </p>
+                <h2>Awards</h2>
+                <p><span class="mgr-10">03/2022</span>Excellent Research Award, Graduate School of Frontier Sciences, The University of Tokyo
+                </p>
+                <p><span class="mgr-10">10/2017</span>Kyoto University Medical School Young Investigator Award (KMYIA)
+                </p>
+
+                <h2>Skills</h2>
+                <h3>Dry lab techniques</h3>
+                <li>Programming (MATLAB, R, Python, Stan, Shell)</li>
+                <li>Docker</li>
+                <li>Git</li>
+                <li>Image analysis (MetaMorph, ImageJ)</li>
+                <li>Mathematical modeling (ordinary differential equation model, Bayesian model)</li>
+                <li>Multi-omic data analysis (transcriptome, proteome, metabolome, and their combinations)</li>
+                <h3>Wet lab techniques</h3>
+                <li>Fluorescence microscopy (live cell imaging)</li>
+                <li>Two-photon excitation microscopy (live imaging of mice tissues and implanted tumors)</li>
+                <li>Molecular biology techniques (DNA cloning, Western blotting)</li>
+                <li>Mammalian cell culture (transfections, virus infection, stable cell line development)</li>
+                <li>Mouse experiments (surgery, tumor inoculation)</li>
             </div>
         </div>
 
@@ -57,33 +103,17 @@
     <!-- End Page Content -->
     </div>
 
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-small w3-center w3-opacity w3-light-grey w3-xlarge">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    <footer class="myfooter myfooter-center">
+        <a class="myfa-official" href="https://github.com/usa0ri" target="_blank"><img src="../images/github.png" width="30px"></a>
+        <a class="myfa-official" href="https://hub.docker.com/u/saori" target="_blank"><img src="../images/Docker-Logo-White-RGB_Moby.png" width="30px"></a>
+        <a class="myfa-official" href="https://scholar.google.com/citations?user=qGisyOcAAAAJ&hl=en" target="_blank"><img src="../images/googlescholar.png" width="30px"></a>
+        <a class="myfa-official" href="https://orcid.org/0000-0002-7033-9494" target="_blank"><img src="../images/ORCID-iD_icon_reversed_vector.svg" width="30px"></a>
+        <a class="myfa-official" href="https://www.linkedin.com/in/saori-uematsu-890782134/" target="_blank"><img src="../images/linkedin_mod.png" width="30px"></a>
+        <a class="myfa-official" href="https://www.facebook.com/saori.takaoka.50" target="_blank"><img src="../images/f_logo_RGB-White_58.png" width="30px"></a>
+        <a class="myfa-official" href="https://twitter.com/usa0ri" target="_blank"><img src="../images/Twitter social icons - circle - white.svg" width="30px"></a>
+        <p></p>
+        <small>&copy; 2022 Saori Uematsu</small>
     </footer>
-
-    <script>
-        // Used to toggle the menu on small screens when clicking on the menu button
-        function myFunction() {
-            var x = document.getElementById("navDemo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        var modal = document.getElementById('ticketModal');
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
 
 </body>
 
