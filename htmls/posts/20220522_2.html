@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Saori's web site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../styles/css_family_Lato.css">
+    <link rel="stylesheet" href="../../styles/mystyle.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../../scripts/humburger.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar-top">
+        <div class="navbar">
+            <a href="../../index.html" class="navbar-item">ホーム</a>
+            <a href="../bio.html" class="navbar-item">CV</a>
+            <a href="../publications.html" class="navbar-item">業績</a>
+            <a href="../posts/index.html" class="navbar-item" style="background-color:rgb(53, 118, 119)">投稿記事</a>
+            <a href="../contact.html" class="navbar-item">問い合わせ</a>
+        </div>
+    </div>
+
+    <div id="navDemo" class="hamburger" style="margin-top:0%">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="globalMenuSp">
+        <ul>
+            <li><a href="../../index.html" class="navbar-item">ホーム</a></li>
+            <li><a href="../bio.html" class="navbar-mobile-item">CV</a></li>
+            <li><a href="../publications.html" class="navbar-mobile-item">業績</a></li>
+            <li><a href="../posts/index.html" class="navbar-mobile-item" style="background-color:rgb(53, 118, 119)">投稿記事</a></li>
+            <li><a href="../contact.html" class="navbar-mobile-item">問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page content -->
+    <div class="mycontent" style="max-width:2000px;margin-top:46px">
+
+        <div class="mydisplay-container">
+            <div class="mycontainer" style="padding-bottom: 8px;">
+                <a href="index.html">Back to Posts</a>
+                <h2>助成金と雇用</h2>
+                <p>私は日本から海外研究留学助成金を頂いて海外で研究を開始しました。</p>
+                <p>海外で研究を志す多くの研究者の方々が、何らかのfellowshipに応募すると思います。</p>
+                <P>いかにしてfellowshipを獲得するかについての記事は他にも数多くあります (私自身も参考にさせて頂き感謝しております) 。</P>
+                <p>しかし本投稿では逆に、あまり他記事では書かれていない、fellowshipを獲得する事についてのある意味negativeな側面について共有したいと思います。</p>
+                <p>結論から申し上げると、助成金を持っていると
+                    <b style="font-size: 120%;">雇用プロセスが煩雑化</b> する
+                    <b style="font-size: 120%;">場合</b> があります。
+                </p>
+                <p>幸いボスが大学と交渉してくれたお陰で何とか解決しましたが、ボスは私のこの状況を<b style="font-size: 120%;">"fellowship dilemma"</b>と命名しました。
+                    <small>(勝手に言葉をお借りしております)</small>
+                </p>
+
+            </div>
+
+            <div class="mycontainer-list">
+                <h2>Contents</h2>
+                <ul>
+                    <li><a href="#1">但し書き</a></li>
+                    <li><a href="#2">1. full-timeでの雇用ができない</a></li>
+                    <li><a href="#3">2. Benefitsが受けられない</a></li>
+                    <li><a href="#4">解決策</a></li>
+                    <li><a href="#5">まとめ</a></li>
+                </ul>
+            </div>
+
+            <div class="mycontainer-contents" id="1">
+                <h3>但し書き</h3>
+                <p>本投稿で述べる内容はあくまでも私の経験であり、助成金を頂いて海外で研究を行う方の全員に当てはまるとは思いません。</p>
+                <p>私の基本情報を下記に示します。</p>
+                <ul>
+                    <li>雇用先: Cornell University, NY, USA</li>
+                    <li>雇用開始日: 2022年4月14日</li>
+                    <li>日本からの助成金: 武田科学振興財団 海外研究留学助成 (年額480万円, 往復渡航費 計40万円)</li>
+                </ul>
+                <p>ただボスがHarvardやMITといった東海岸の同僚にfellowshipを持ったポスドクの雇用について聞いてくれたのですが、皆私と同じような状況に陥っているとの事でした。</p>
+            </div>
+
+            <div class="mycontainer-contents" id="2">
+                <p>雇用プロセスが煩雑化した要因は下記の2つです。</p>
+                <h3>1. full-timeでの雇用ができない</h3>
+                <p>アメリカの多くの研究機関では、NIH基準に基づきポスドクの最低賃金が定められています。</p>
+                <p>日本からの多くの助成金の支給額はこの基準を下回っているため、雇用先ラボのボスからいくらかの給与の補填を受けることになるケースが多いです。</p>
+                <p>助成金は原則的に個人の銀行口座に振り込まれるため、大学側からは補填額しか給与支払いが発生しません。</p>
+                <p>その結果、給与が少なすぎるためにfull-timeではなくpart-timeとしてしか雇えないとの事でした。</p>
+                <p>Part-time postdocで何の問題があるかと言うと</p>
+                <ul>
+                    <li>毎日大学の専用websiteでタイムカードを記録</li>
+                    <li>毎週ボスに勤務時間の承認が必要</li>
+                </ul>
+
+                <p>という面倒な事になります。</p>
+                <p>何となく気分が落ち込む + 面倒なだけならば「最強のパートタイマーになってやろうではないか」という気概で乗り切れるかもしれませんが、一番の問題が後述する保険です。</p>
+
+            </div>
+
+            <div class="mycontainer-contents" id="3">
+                <h3>2. Benefitsが受けられない</h3>
+                <p>Benefitsとは、個用主が提供する従業員の福利厚生一般の事で、健康保険や生命保険といった保険や休暇、年金なども含まれます。</p>
+                <p>周知の通り、アメリカには国民皆保険制度が存在せず、個々人で保険に加入する必要があります。</p>
+                <p>海外ポスドクの多くは、大学が提供する保険に入り、保険料の大部分を受け入れ先のボスが負担します。</p>
+                <p>しかし大学のbenefitsを受けるためには勤務時間が一定以上である必要があり、私の場合のpart-timeの給与では対象外との事でした。</p>
+                <p>大学のbenefitsの対象外となった従業員はどうするかと言うと、大学が提携している外部の保険に入ることになります。</p>
+                <p>ここで生じる問題は言わずもがな、</p>
+                <ul>
+                    <li>当然ボスからの補填は受けられず全額自己負担</li>
+                    <li>大学が提供するbenefitsのプランよりも高額であるにも関わらず質が低い (同僚やボスによると)</li>
+                </ul>
+                <p>という事です。</p>
+            </div>
+
+            <div class="mycontainer-contents" id="4">
+                <h3>解決策</h3>
+                <p>ひとえにボスの厚意で、雇用開始から1ヶ月ほどが経過してようやく下記で落ち着きました。</p>
+                <ul>
+                    <li>Full-timeで雇う</li>
+                    <li>大学が提供するbenefitsに加入し、ボスが補填する</li>
+                    <li>来年からは私個人ではなく大学の指定口座に助成金振込をお願いする</li>
+                </ul>
+                <p>詳細については割愛しますが、結局はボスと大学との交渉という印象で、case by caseのようです。</p>
+            </div>
+
+            <div class="mycontainer-contents" id="5">
+                <h3>まとめ</h3>
+                <p>誤解のないよう申し上げますが、本投稿をもって、海外ポスドクを目指す方々はfellowshipに応募するべきではないと私が考えているわけでは決してありません。</p>
+                <p>もちろん競争を勝ち抜いて獲得するfellowshipは研究者としての業績になり、研究者として成長するための非常に良い経験となると考えています。</p>
+                <p>そんなpositiveな側面しか見えないfellowshipだからこそ、盲点であるnegativeな側面も認知されても良いのではないかという思いから私自身の体験を書きました。</p>
+                <p>助成金と雇用に関する問題は少なからずあるようですが、残念ながら解決策については留学先やボス、助成金によって様々で一般的な手立てはないように思います。</p>
+                <p>「Saori、fellowshipを獲得することは本来は良い事なんだ、それは間違いない」と繰り返し私に言いながら大学と交渉を重ねてくれたボスの厚意に心から感謝して、今後研究に励みたいと思います。</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- End Page Content -->
+    </div>
+
+    <footer class="myfooter myfooter-center">
+        <a class="myfa-official" href="https://github.com/usa0ri" target="_blank"><img src="../../images/github.png" width="30px"></a>
+        <a class="myfa-official" href="https://hub.docker.com/u/saori" target="_blank"><img src="../../images/Docker-Logo-White-RGB_Moby.png" width="30px"></a>
+        <a class="myfa-official" href="https://scholar.google.com/citations?user=qGisyOcAAAAJ&hl=en" target="_blank"><img src="../../images/googlescholar.png" width="30px"></a>
+        <a class="myfa-official" href="https://orcid.org/0000-0002-7033-9494" target="_blank"><img src="../../images/ORCID-iD_icon_reversed_vector.svg" width="30px"></a>
+        <a class="myfa-official" href="https://www.linkedin.com/in/saori-uematsu-890782134/" target="_blank"><img src="../../images/linkedin_mod.png" width="30px"></a>
+        <a class="myfa-official" href="https://www.facebook.com/saori.takaoka.50" target="_blank"><img src="../../images/f_logo_RGB-White_58.png" width="30px"></a>
+        <a class="myfa-official" href="https://twitter.com/usa0ri" target="_blank"><img src="../../images/Twitter social icons - circle - white.svg" width="30px"></a>
+        <p></p>
+        <small>&copy; 2022 Saori Uematsu</small>
+    </footer>
+
+</body>
+
+</html>
