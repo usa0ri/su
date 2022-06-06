@@ -43,13 +43,36 @@
     <div class="mycontent" style="max-width:2000px;margin-top:46px">
 
         <div class="mydisplay-container">
-            <div class="mycontainer">
-                <h2>2022</h2>
-                <li><span class="mgr-10">06/05</span><a href="20220605.html">Markdown to HTML parser</a></li>
-                <li><span class="mgr-10">05/22</span><a href="20220522_2.html">Fellowship dilemma</a></li>
-                <li><span class="mgr-10">05/22</span><a href="20220522.html">Initial post</a></li>
-
+            <div class="mycontainer" style="padding-bottom: 8px;">
+                <a href="index.html">Back to Posts</a>
+                <h2>Markdown to HTML parser</h2>
+                <p>本webページはHTMLから記述していますが、投稿記事を書くのにHTMLを直接編集するのは面倒です(特にtagを書くのが)。</p>
+                <p>普段は実験ノートや論文メモをmarkdownで書いていることもあり、markdownで投稿記事を作成して、それをHTMLに変換するいわゆるparserを作成してみました。</p>
             </div>
+
+            <div class="mycontainer-list">
+                <h2>Contents</h2>
+                <ul>
+                    <li><a href="#1">大枠</a></li>
+                    <li><a href="#2">未実装</a></li>
+                    <ul>
+            </div>
+
+            <div class="mycontainer-contents" id="1">
+                <h3>大枠</h3>
+                <p>Markdownで投稿内容を記述。</p>
+                <p>shell scriptでタイトル・見出し一覧を取得。</p>
+                <p>Content listにタイトル・見出しを出力。</p>
+                <p>各contentsの内容を出力。</p>
+            </div>
+
+            <div class="mycontainer-contents" id="2">
+                <h3>未実装</h3>
+                <p>箇条書きへの対応。</p>
+                <p>Code blockへの対応。</p>
+                <p>(必要か不明だが)表への対応。</p>
+            </div>
+
         </div>
 
     </div>

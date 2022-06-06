@@ -43,32 +43,5 @@
     <div class="mycontent" style="max-width:2000px;margin-top:46px">
 
         <div class="mydisplay-container">
-            <div class="mycontainer">
-                <h2>2022</h2>
-                <li><span class="mgr-10">06/05</span><a href="20220605.html">Markdown to HTML parser</a></li>
-                <li><span class="mgr-10">05/22</span><a href="20220522_2.html">Fellowship dilemma</a></li>
-                <li><span class="mgr-10">05/22</span><a href="20220522.html">Initial post</a></li>
-
-            </div>
-        </div>
-
-    </div>
-
-    <!-- End Page Content -->
-    </div>
-
-    <footer class="myfooter myfooter-center">
-        <a class="myfa-official" href="https://github.com/usa0ri" target="_blank"><img src="../../images/github.png" width="30px"></a>
-        <a class="myfa-official" href="https://hub.docker.com/u/saori" target="_blank"><img src="../../images/Docker-Logo-White-RGB_Moby.png" width="30px"></a>
-        <a class="myfa-official" href="https://scholar.google.com/citations?user=qGisyOcAAAAJ&hl=en" target="_blank"><img src="../../images/googlescholar.png" width="30px"></a>
-        <a class="myfa-official" href="https://orcid.org/0000-0002-7033-9494" target="_blank"><img src="../../images/ORCID-iD_icon_reversed_vector.svg" width="30px"></a>
-        <a class="myfa-official" href="https://www.linkedin.com/in/saori-uematsu-890782134/" target="_blank"><img src="../../images/linkedin_mod.png" width="30px"></a>
-        <a class="myfa-official" href="https://www.facebook.com/saori.takaoka.50" target="_blank"><img src="../../images/f_logo_RGB-White_58.png" width="30px"></a>
-        <a class="myfa-official" href="https://twitter.com/usa0ri" target="_blank"><img src="../../images/Twitter social icons - circle - white.svg" width="30px"></a>
-        <p></p>
-        <small>&copy; 2022 Saori Uematsu</small>
-    </footer>
-
-</body>
-
-</html>
+            <div class="mycontainer" style="padding-bottom: 8px;">
+                <a href="index.html">Back to Posts</a>
